@@ -309,6 +309,87 @@ header .navbar ul li a:hover{
     color: #fff;
     background: var(--yellow);
 }
+.service{
+    min-height: 100vh;
+    padding: 20px 9px;
+    padding-bottom: 80px
+}
+
+.service .title{
+    text-align: center;
+    color: var(--primary-text-color);
+    font-size: 50px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.service .container{
+    min-height: 100vh;
+    padding: 20px 9%;
+    background: (--primary-bg-color);
+    padding-bottom: 80px;
+}
+.service .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.service .box-container .box{
+    flex: 1 1 300px;
+    text-align: center;
+    background: var(--secondary-bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.service .box-container .box i{
+    font-size: 40px;
+    height: 80px;
+    width: 80;
+    line-height: 80px;
+    background: rgba(0,0,0,.1);
+    border-radius: 50%;
+    margin: 10px 0;
+    color: var(--primary-text-color);
+}
+.service .box-container .box h3{
+    font-size: 25px;
+    color: var(--primary-bg-color);
+}
+.service .box-container .box p{
+    font-size: 18px;
+    color: var(--primary-text-color);
+    padding: 5px;
+}
+.service .box-container .box .number{
+    position: absolute;
+    top: 5px; left: 15px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #fff;
+}
+.service .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: .3s linear;
+    background: var(--yellow);
+    clip-path: circle(28% at 5% 0);
+}
+.service .box-container .box:hover::before{
+    clip-path: circle(100%);
+}
+.service .box-container .box:hover > *{
+    color: #fff;
+}
+
+
 
 
 .contacts .row{
