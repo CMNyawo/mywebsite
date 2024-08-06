@@ -39,7 +39,9 @@ html::-webkit-scrollbar-thumb{
 body{
     background: #7859b6;
     overflow-x: hidden;
+    flex-direction: colomn;
     padding-left: 35rem;
+    max-height: 100vh;
 }
 
 section{
