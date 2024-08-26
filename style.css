@@ -408,6 +408,7 @@ header .navbar ul li a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    text-transform: none;
 }
 
 .contacts .row .content{
